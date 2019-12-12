@@ -1,23 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <datav />
   </div>
 </template>
 
 <script>
+import datav from './components/datav/index.vue'
+
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    datav
+  },
+  data () {
+    return {}
+  }
 }
 </script>
 
-<style>
+<style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>

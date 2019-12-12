@@ -1,18 +1,14 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import App from './App.vue'
+
 import dataV from '@jiaminghi/data-view'
-import p1 from '@/components/p1'
+
+Vue.config.productionTip = false
 
 Vue.use(dataV)
-Vue.use(VueRouter)
-
 const NotFound = { template: '<p>Page not found</p>' }
-const Home = { template: '<p>home page</p>' }
-const About = { template: '<p>about page</p>' }
 const routes = {
-  '/': Home,
-  '/about': About,
-  '/about1': p1
+  '/': App
 }
 /* eslint-disable no-new */
 new Vue({
